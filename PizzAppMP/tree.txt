@@ -1,0 +1,108 @@
+Structure du dossier pour le volume SSD_1To
+Le numéro de série du volume est 0CC9-1D4F
+C:.
+¦   .gitignore
+¦   build.gradle.kts
+¦   gradle.properties
+¦   gradlew
+¦   gradlew.bat
+¦   local.properties
+¦   README.md
+¦   settings.gradle.kts
+¦   tree.txt
+¦   
++---.fleet
+¦       receipt.json
+¦       
++---composeApp
+¦   ¦   build.gradle.kts
+¦   ¦   
+¦   +---src
+¦       +---androidMain
+¦       ¦   ¦   AndroidManifest.xml
+¦       ¦   ¦   
+¦       ¦   +---kotlin
+¦       ¦   ¦   +---fr
+¦       ¦   ¦       +---unica
+¦       ¦   ¦           +---snicolas
+¦       ¦   ¦               +---pizzapp
+¦       ¦   ¦                       MainActivity.kt
+¦       ¦   ¦                       Platform.android.kt
+¦       ¦   ¦                       
+¦       ¦   +---res
+¦       ¦       +---drawable
+¦       ¦       ¦       ic_launcher_background.xml
+¦       ¦       ¦       
+¦       ¦       +---drawable-v24
+¦       ¦       ¦       ic_launcher_foreground.xml
+¦       ¦       ¦       
+¦       ¦       +---mipmap-anydpi-v26
+¦       ¦       ¦       ic_launcher.xml
+¦       ¦       ¦       ic_launcher_round.xml
+¦       ¦       ¦       
+¦       ¦       +---mipmap-hdpi
+¦       ¦       ¦       ic_launcher.png
+¦       ¦       ¦       ic_launcher_round.png
+¦       ¦       ¦       
+¦       ¦       +---mipmap-mdpi
+¦       ¦       ¦       ic_launcher.png
+¦       ¦       ¦       ic_launcher_round.png
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xhdpi
+¦       ¦       ¦       ic_launcher.png
+¦       ¦       ¦       ic_launcher_round.png
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xxhdpi
+¦       ¦       ¦       ic_launcher.png
+¦       ¦       ¦       ic_launcher_round.png
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xxxhdpi
+¦       ¦       ¦       ic_launcher.png
+¦       ¦       ¦       ic_launcher_round.png
+¦       ¦       ¦       
+¦       ¦       +---values
+¦       ¦               strings.xml
+¦       ¦               
+¦       +---commonMain
+¦       ¦   +---composeResources
+¦       ¦   ¦   +---drawable
+¦       ¦   ¦           compose-multiplatform.xml
+¦       ¦   ¦           
+¦       ¦   +---kotlin
+¦       ¦       +---fr
+¦       ¦           +---unica
+¦       ¦               +---snicolas
+¦       ¦                   +---pizzapp
+¦       ¦                           App.kt
+¦       ¦                           Greeting.kt
+¦       ¦                           Platform.kt
+¦       ¦                           
+¦       +---desktopMain
+¦       ¦   +---kotlin
+¦       ¦       +---fr
+¦       ¦           +---unica
+¦       ¦               +---snicolas
+¦       ¦                   +---pizzapp
+¦       ¦                           main.kt
+¦       ¦                           Platform.jvm.kt
+¦       ¦                           
+¦       +---wasmJsMain
+¦           +---kotlin
+¦           ¦   +---fr
+¦           ¦       +---unica
+¦           ¦           +---snicolas
+¦           ¦               +---pizzapp
+¦           ¦                       main.kt
+¦           ¦                       Platform.wasmJs.kt
+¦           ¦                       
+¦           +---resources
+¦                   index.html
+¦                   styles.css
+¦                   
++---gradle
+    ¦   libs.versions.toml
+    ¦   
+    +---wrapper
+            gradle-wrapper.jar
+            gradle-wrapper.properties
+            
