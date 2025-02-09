@@ -1,18 +1,39 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/VYS_GaEs)
-# Université Côte d'Azur - DS4H - 
-# MASTER MIAGE NUMRES
-## Cours de Programmation Mobile Moderne - Leo Donati
+PizzAppMP - Projet Multiplateforme
+=== 
 
-### TD3 : Application Kotlin Multiplateforme
+# Description
 
+PizzAppMP est une application de commande de pizzas développée dans le cadre du TD3 du cours de Programmation Mobile du Master MIAGE NUMRES à l'Université Côte d'Azur. L'objectif de ce projet était de transformer l'application initiale en une solution multiplateforme fonctionnant sur Android, iOS, Web et Desktop (Windows, macOS, Linux)
 
-**Objectif du TD3** : faire de l'application PizzApp (td2) une application multiplateforme qui puisse tourner sur
+# Binôme
+- LESSATINI Morgane
+- SAILLANT Nicolas
+
+[Lien vers la video](https://drive.google.com/file/d/1yw5zf0aJRN03O4ElaIJXiaHQojtay9uk/view?usp=sharing) 
+# Déploiement
+
+```sh
+git clone https://github.com/UniCA-DS4H-MIAGE-NUMRES/td3-saillant.git
+cd PizzAppMP
+```
+
 - Android
-- Navigateur Web
-- Desktop (MacOS, Windows, Linux)
+    - Lancer le projet dans un emulateur android (exemple android studio)
 
-#### Consignes
-- A faire en binôme
-- Utiliser le repository du github classroom en suivant [ce lien]() pour le binôme
-- Décrire dans ce ReadMe les détails de votre projet et comment vous avez surmonté les difficultés (typiquement concernant certains packages comme Room)
-- Ajouter le lien vers une vidéo (Youtube ou autre) avec une démo de votre projet où l'on voit son déploiement sur differentes plateformes
+- Desktop
+```sh
+.\gradlew :composeApp:run  
+```
+
+- Web
+```sh
+./gradlew :composeApp:wasmJsBrowserDevelopmentRun
+```
+
+# Difficultés rencontrées
+
+Lors du développement de la version multiplateforme, des défis ont été rencontrés, en particulier avec la version Web. Voici les principales difficultés :
+
+- Problèmes de compatibilité avec certaines bibliothèques : Certaines dépendances utilisées pour Android ne fonctionnaient pas directement sur Web et desktop.
+- Des problèmes non résolu avec la partie WEB du projet
+- L'affichage des images a pu possé problèmes en fonction de la platformes
