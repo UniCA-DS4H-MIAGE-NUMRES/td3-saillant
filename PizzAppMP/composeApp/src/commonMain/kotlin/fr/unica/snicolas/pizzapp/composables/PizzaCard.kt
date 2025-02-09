@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import fr.unica.snicolas.pizzapp.model.Pizza
 import org.jetbrains.compose.resources.InternalResourceApi
 import fr.unica.snicolas.pizzapp.utils.loadImage
+import org.jetbrains.compose.resources.painterResource
 
 @OptIn(ExperimentalMaterialApi::class, InternalResourceApi::class)
 @Composable
@@ -24,8 +25,14 @@ fun PizzaCard(pizza: Pizza, onClick: () -> Unit) {
         onClick = onClick
     ) {
         Column {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(150.dp)
+            )
             Image(
-                painter = loadImage("pizza${pizza.id}.png"),
+                //painter = loadImage("pizza${pizza.id}.png"),
+                painter = painterResource(pizza.imageResource),
                 contentDescription = pizza.name,
                 modifier = Modifier
                     .fillMaxWidth()

@@ -95,6 +95,7 @@ android {
 
 dependencies {
     implementation(libs.androidx.room.common)
+    implementation(libs.androidx.room.ktx)
     debugImplementation(compose.uiTooling)
 }
 

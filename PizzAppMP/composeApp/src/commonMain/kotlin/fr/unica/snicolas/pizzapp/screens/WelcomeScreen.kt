@@ -7,10 +7,14 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
+import org.jetbrains.compose.resources.painterResource
+import pizzappmp.composeapp.generated.resources.Res
+import pizzappmp.composeapp.generated.resources.logo
 
 @Composable
-fun WelcomeScreen(onNavigateToMenu: () -> Unit, onNavigateToCart: () -> Unit) {
+fun WelcomeScreen(onNavigateToMenu: () -> Unit, onNavigateToCart: () -> Unit, onNavigateToHistory: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -18,6 +22,14 @@ fun WelcomeScreen(onNavigateToMenu: () -> Unit, onNavigateToCart: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
+        Image(
+            painter = painterResource(Res.drawable.logo),
+            contentDescription = "logo",
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(150.dp),
+            contentScale = ContentScale.Crop
+        )
 
         Spacer(modifier = Modifier.height(32.dp))
 
@@ -36,10 +48,10 @@ fun WelcomeScreen(onNavigateToMenu: () -> Unit, onNavigateToCart: () -> Unit) {
         }
 
         Button(
-            onClick = { /* TODO: Implement checkout */ },
-            modifier = Modifier.fillMaxWidth()
+            onClick = onNavigateToHistory,
+            modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)
         ) {
-            Text("Payer la commande")
+            Text("Historique des commandes")
         }
     }
 }

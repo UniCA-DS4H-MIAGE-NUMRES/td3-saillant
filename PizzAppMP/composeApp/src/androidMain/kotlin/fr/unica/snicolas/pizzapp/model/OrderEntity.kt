@@ -5,15 +5,9 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "orders")
 data class OrderEntity(
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
     val pizzaName: String,
     val price: Double,
     val extraCheese: Int
-) {
-    fun toOrder(): Order = Order(
-        id = id,
-        pizzaName = pizzaName,
-        price = price,
-        extraCheese = extraCheese
-    )
-}
+)

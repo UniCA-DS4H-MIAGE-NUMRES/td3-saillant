@@ -17,4 +17,8 @@ class CartViewModel {
     fun getTotalPrice(): Double {
         return _cartItems.sumOf { it.pizza.price + (it.extraCheese * 0.05) }
     }
+
+    fun clearCart() {
+        _cartItems.clear()
+    }
 }
