@@ -35,5 +35,5 @@ cd PizzAppMP
 Lors du développement de la version multiplateforme, des défis ont été rencontrés, en particulier avec la version Web. Voici les principales difficultés :
 
 - Problèmes de compatibilité avec certaines bibliothèques : Certaines dépendances utilisées pour Android ne fonctionnaient pas directement sur Web et desktop.
-- Des problèmes non résolu avec la partie WEB du projet
+- Des problèmes avec la partie WEB du projet fini par être résolu
 - L'affichage des images a pu possé problèmes en fonction de la platformes
